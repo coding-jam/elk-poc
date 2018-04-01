@@ -1,4 +1,4 @@
-FROM sebp/elk
+FROM sebp/elk:623
 
 ADD conf/*.conf /etc/logstash/conf.d/
 ADD conf/pipelines.yml /opt/logstash/config
