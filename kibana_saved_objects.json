@@ -6,7 +6,7 @@
       "title": "Test dashboard",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":3},\"id\":\"481f54d0-35d1-11e8-9d8d-bb03ba51c775\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"de77fd50-35d2-11e8-9d8d-bb03ba51c775\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"c63306f0-35d1-11e8-9d8d-bb03ba51c775\",\"panelIndex\":\"3\",\"type\":\"search\",\"version\":\"6.2.2\"}]",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":4,\"w\":7,\"h\":4,\"i\":\"1\"},\"id\":\"481f54d0-35d1-11e8-9d8d-bb03ba51c775\",\"type\":\"visualization\",\"version\":\"6.2.2\",\"embeddableConfig\":{\"spy\":null,\"vis\":{\"legendOpen\":true}}},{\"panelIndex\":\"2\",\"gridData\":{\"x\":7,\"y\":4,\"w\":5,\"h\":4,\"i\":\"2\"},\"id\":\"de77fd50-35d2-11e8-9d8d-bb03ba51c775\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":4,\"i\":\"3\"},\"id\":\"c63306f0-35d1-11e8-9d8d-bb03ba51c775\",\"type\":\"search\",\"version\":\"6.2.2\",\"columns\":[\"level\",\"message\",\"uri\",\"serviceName\",\"X-B3-TraceId\"]}]",
       "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
       "version": 1,
       "timeRestore": false,
@@ -38,24 +38,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"159b45c0-35cf-11e8-9d8d-bb03ba51c775\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"exists\":{\"field\":\"X-B3-TraceId\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"009a4a20-34fa-11e8-aad8-cfd17b43a3ff\",\"key\":\"X-B3-TraceId\",\"negate\":false,\"type\":\"exists\",\"value\":\"exists\"}}]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "481f54d0-35d1-11e8-9d8d-bb03ba51c775",
-    "_type": "visualization",
-    "_source": {
-      "title": "URIs percentiles",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"field\":\"elapsedInMs\",\"percents\":[95,99]},\"schema\":\"metric\",\"type\":\"percentiles\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"URIs\",\"field\":\"uri.keyword\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"_term\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":50},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":75,\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Percentiles of elapsedInMs\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Percentiles of elapsedInMs\"},\"type\":\"value\"}]},\"title\":\"URIs percentiles\",\"type\":\"histogram\"}",
-      "uiStateJSON": "{\"spy\":null}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"159b45c0-35cf-11e8-9d8d-bb03ba51c775\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"f029b280-35d9-11e8-bb52-076cfb84a256\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"exists\":{\"field\":\"X-B3-TraceId\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"009a4a20-34fa-11e8-aad8-cfd17b43a3ff\",\"key\":\"X-B3-TraceId\",\"negate\":false,\"type\":\"exists\",\"value\":\"exists\"}}]}"
       }
     },
     "_meta": {
@@ -72,7 +55,24 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"159b45c0-35cf-11e8-9d8d-bb03ba51c775\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"f029b280-35d9-11e8-bb52-076cfb84a256\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "481f54d0-35d1-11e8-9d8d-bb03ba51c775",
+    "_type": "visualization",
+    "_source": {
+      "title": "URIs percentiles",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"field\":\"elapsedInMs\",\"percents\":[95,99]},\"schema\":\"metric\",\"type\":\"percentiles\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"URIs\",\"field\":\"uri.keyword\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"_term\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":50},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":75,\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Percentiles of elapsedInMs\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Percentiles of elapsedInMs\"},\"type\":\"value\"}]},\"title\":\"URIs percentiles\",\"type\":\"histogram\"}",
+      "uiStateJSON": "{\"spy\":null}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f029b280-35d9-11e8-bb52-076cfb84a256\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     },
     "_meta": {
