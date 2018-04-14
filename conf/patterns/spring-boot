@@ -1,0 +1,9 @@
+SB_TIMESTAMP %{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{TIME}
+SL_MODULE [a-zA-Z0-9-]+
+SL_REQUEST_ID [a-z0-9]*
+SL_EXPORT (?:true|false)?
+SLEUTH \[%{SL_MODULE:service_name},%{SL_REQUEST_ID:trace},%{SL_REQUEST_ID:span},%{SL_EXPORT:export}\]
+THREAD [A-Za-z0-9-]+
+
+SB_LAYOUT %{SB_TIMESTAMP:timestamp}\s+%{LOGLEVEL:level} %{SLEUTH} %{NUMBER:pid} --- \[%{THREAD:thread}\] %{JAVACLASS:class}\s*
+METRIC_MSG PERFORM %{URIPATH:uri} with status %{NUMBER:status} in %{NUMBER:elapsed_in_ms}ms

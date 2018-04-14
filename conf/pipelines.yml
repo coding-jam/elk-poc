@@ -79,11 +79,15 @@
 #
 #   path.dead_letter_queue:
 
-- pipeline.id: spring-cloud-poc-tcp
+- pipeline.id: spring-cloud-poc-tcp-json
   pipeline.batch.size: 1
   path.config: /etc/logstash/conf.d/tpc-json.conf
   queue.type: persisted
-- pipeline.id: spring-cloud-poc-beats
+- pipeline.id: spring-cloud-poc-filebeat-json
   pipeline.batch.size: 1
-  path.config: /etc/logstash/conf.d/filebeat.conf
+  path.config: /etc/logstash/conf.d/filebeat-json.conf
+  queue.type: persisted
+- pipeline.id: spring-cloud-poc-filebeat-plain
+  pipeline.batch.size: 1
+  path.config: /etc/logstash/conf.d/filebeat-plain.conf
   queue.type: persisted
