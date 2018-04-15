@@ -11,3 +11,5 @@ services:
       - "5044:5044" # beats json port
       - "5045:5045" # beats plain port
       - "5000:5000" # tcp json port
+    volumes:
+      - /var/folders:/logs # replace /var/folders with local application log folder
