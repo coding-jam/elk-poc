@@ -89,9 +89,9 @@
   queue.type: persisted
 - pipeline.id: spring-cloud-poc-filebeat-plain
   pipeline.batch.size: 1
-  path.config: /etc/logstash/conf.d/filebeat-plain.conf
+  path.config: /etc/logstash/conf.d/{input-filebeat-plain.conf,filter-output-plain.conf}
   queue.type: persisted
 - pipeline.id: spring-cloud-poc-file-plain
   pipeline.batch.size: 1
-  path.config: /etc/logstash/conf.d/file-plain.conf
+  path.config: /etc/logstash/conf.d/{input-file-plain.conf,filter-output-plain.conf}
   queue.type: persisted
